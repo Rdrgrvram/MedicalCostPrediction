@@ -70,6 +70,8 @@ Modelo de clasificación para imputar `smoker`: regresión logística, ROC-AUC =
 
 Detalle completo de metodología, tablas y limitaciones en `report/Informe_MedicalCostPrediction.pdf`.
 
-## Autor
+## Autores
+Mauricio Orlando Rivera Mayan 
+Rodrigo Gabriel Rivera Mayan 
+Laura Yackelin Perez Estrada 
 
-Rodrigo Rivera — rodrigo.rivera@ucb.edu.bo
