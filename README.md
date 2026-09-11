@@ -4,7 +4,6 @@
 
 Predecir el costo médico individual (`charges`) a partir de variables demográficas y de salud (edad, sexo, IMC, número de hijos, hábito de fumar y región), aplicando un pipeline de preprocesamiento y modelado supervisado (regresión). El objetivo es identificar los factores con mayor impacto en el costo y entregar un modelo con buen desempeño predictivo e interpretable para apoyar decisiones (p. ej., estimación de primas).
 
-> Ajusta este párrafo si tu enfoque, target o dataset son distintos.
 
 ## Dataset
 
@@ -14,7 +13,7 @@ Predecir el costo médico individual (`charges`) a partir de variables demográf
 - **Variables:** age, sex, bmi, children, smoker, region, charges
 - **Filas:** 1338
 
-El archivo ya está incluido en este repositorio en `data/insurance.csv` (52 KB), para que el notebook corra de inicio a fin sin pasos manuales, incluyendo en Google Colab. Si prefieres descargarlo tú mismo, usa cualquiera de los enlaces de arriba y reemplaza el archivo en la misma ruta.
+El archivo ya está incluido en este repositorio en `data/insurance.csv` (52 KB), para que el notebook corra de inicio a fin sin pasos manuales, incluyendo en Google Colab. 
 
 ## Estructura del repositorio
 
@@ -79,7 +78,9 @@ Modelo de clasificación para imputar `smoker`: regresión logística, ROC-AUC =
 Detalle completo de metodología, tablas y limitaciones en `report/Informe_MedicalCostPrediction.pdf`.
 
 ## Autores
-Mauricio Orlando Rivera Mayan 
+Mauricio Orlando Rivera Mayan
+
 Rodrigo Gabriel Rivera Mayan 
+
 Laura Yackelin Perez Estrada 
 
