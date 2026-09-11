@@ -9,21 +9,22 @@ Predecir el costo médico individual (`charges`) a partir de variables demográf
 ## Dataset
 
 - **Nombre:** Medical Cost Personal Datasets (insurance.csv)
-- **Descarga:** https://www.kaggle.com/datasets/mirichoi0218/insurance
+- **Página Kaggle:** https://www.kaggle.com/datasets/mirichoi0218/insurance
+- **Descarga vía API de Kaggle:** https://www.kaggle.com/api/v1/datasets/download/mirichoi0218/insurance
 - **Variables:** age, sex, bmi, children, smoker, region, charges
-- **Filas:** ~1338
+- **Filas:** 1338
 
-> Reemplaza el link si usaste otra fuente o versión del dataset.
+El archivo ya está incluido en este repositorio en `data/insurance.csv` (52 KB), para que el notebook corra de inicio a fin sin pasos manuales, incluyendo en Google Colab. Si prefieres descargarlo tú mismo, usa cualquiera de los enlaces de arriba y reemplaza el archivo en la misma ruta.
 
 ## Estructura del repositorio
 
 ```
 .
-├── notebooks/        # Notebook final (.ipynb) con el pipeline completo
-├── report/           # Informe en PDF (3-6 páginas)
-├── slides/           # Presentación (PPTX o PDF)
-├── src/              # (Opcional) funciones y utilidades reutilizables
-├── requirements.txt  # Dependencias para reproducir el entorno
+├── data/              # insurance.csv (dataset incluido para reproducibilidad)
+├── notebooks/         # Notebook final (.ipynb) con el pipeline completo
+├── report/            # Informe en PDF (3-6 páginas)
+├── slides/            # Presentación (PPTX)
+├── requirements.txt   # Dependencias para reproducir el entorno
 └── README.md
 ```
 
@@ -45,11 +46,18 @@ Predecir el costo médico individual (`charges`) a partir de variables demográf
    ```bash
    pip install -r requirements.txt
    ```
-4. Descargar el dataset desde el link indicado arriba y colocarlo en una carpeta `data/` en la raíz del proyecto (no versionada en Git).
+4. El dataset (`data/insurance.csv`) ya viene incluido en el repositorio — no hace falta descargarlo aparte.
 5. Ejecutar el notebook:
    ```bash
    jupyter notebook notebooks/MedicalCostPrediction_Model.ipynb
    ```
+
+**En Google Colab:** el notebook no encuentra `data/insurance.csv` si solo subes el archivo `.ipynb` suelto — necesita el repositorio completo. En una celda, antes de correr el resto del notebook:
+```python
+!git clone https://github.com/TU_USUARIO/MedicalCostPrediction.git
+%cd MedicalCostPrediction/notebooks
+```
+Así el notebook encuentra el dataset en `../data/insurance.csv`, igual que al correrlo localmente.
 
 ## Resultados principales
 
